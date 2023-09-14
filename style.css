@@ -1,0 +1,204 @@
+.contenedor{
+    background-color: white;
+    padding: 10px;
+    display: grid;/*crear grilla*/
+    grid-template-columns: repeat(6,2fr);/*cantidad de columnas*/
+    grid-template-rows: repeat(12, 100px);/*cantidad de filas*/
+    grid-template-areas:"L L PS PS LP TD" 
+                        "L L PS PS NS CT" 
+                        "BS EC GD OL HL ECC"
+                        "BS EC GD OL HL ECC"
+                        "BS EC GD OL HL ECC"
+                        "EVS EVS EVP EVP R R"
+                        "EVS EVS EVP EVP R R"
+                        "DT1 DT2 DT3 OF1 OF2 OF3"
+                        "DT1 DT2 DT3 OF1 OF2 OF3"
+                        "MC MC MC MC MC MC "
+                        "M1 M2 M3 M4 M5 M6 "
+                        "F F F F F F";
+
+    gap: 10px;/*espacio entre items*/
+}
+.item{
+    background-color: pink;
+    font-size: 24;
+    text-align:center;
+    border: 1px solid red;
+    
+}
+.logo{
+    grid-area: L;
+    text-align: center;
+    position:static;
+    
+
+    
+}
+.passpack{
+    padding-top: 30px;
+    grid-area: PS;
+    text-align: center;
+}
+.lupa{
+    grid-area: LP;
+    padding-top: 20px;
+    text-align: center;
+}
+.lupa_img{
+    width:95px;
+}
+.tienda{
+    grid-area: TD;   
+    text-align: center;
+}
+.tienda_img{
+    width:calc(50%);
+}
+.nosotros{ 
+    grid-area: NS;
+    padding-top: 30px;
+    font-size:medium;
+    text-align: center;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+.contactenos{
+    grid-area: CT;
+    padding-top: 30px;
+    font-size:large;
+    text-align: center;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+
+}
+.titulos{
+    text-align: center;
+    padding: 1px;
+    background-color: rgba(255, 255, 255, 0.425);
+}
+.imagen{
+    width: 100%;
+    height: auto;
+}
+
+.bolsas{
+    grid-area: BS;
+    height: 100%;
+    width: 100%;
+    object-fit: cover; 
+    object-position: center center; 
+    position: relative;
+    overflow: hidden;
+}
+.slide_txt{
+    z-index: 1;
+    text-align: center;
+    position: absolute;
+    top: 10%;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    padding: 5px;
+    text-align: center;
+    font-size: 25px;
+}
+.emb_caj{
+    grid-area: EC;
+    height: 100%;
+    width: 100%;
+    object-fit: cover; 
+    object-position: center center; 
+    position: relative;
+    overflow: hidden; 
+    
+}
+.gast_desc{
+    grid-area: GD;
+    height: 100%;
+    width: 100%;
+    object-fit: cover; 
+    object-position: center center; 
+    position: relative;
+    overflow: hidden;
+}
+.ofi_lib{
+    grid-area: OL;
+    height: 100%;
+    width: 100%;
+    object-fit: cover; 
+    object-position: center center; 
+    position: relative;
+    overflow: hidden;
+}
+.hig_lim{
+    grid-area: HL;
+    height: 100%;
+    width: 100%;
+    object-fit: cover; 
+    object-position: center center; 
+    position: relative;
+    overflow: hidden;
+}
+.env_coc{
+    grid-area: ECC;
+    height: 100%;
+    width: 100%;
+    object-fit: cover; 
+    object-position: center center; 
+    position: relative;
+    overflow: hidden;
+}
+.envios_sup{
+    grid-area: EVS;
+}
+.envios_pais{
+    grid-area: EVP;
+}
+.retiro{
+    grid-area: R;
+}
+.desta_1{
+    grid-area: DT1;
+}
+.desta_2{
+    grid-area: DT2;
+}
+.desta_3{
+    grid-area: DT3;
+}
+.desta_3{
+    grid-area: DT3;
+}
+.ofe_1{
+    grid-area: OF1;
+}
+.ofe_2{
+    grid-area: OF2;
+}
+.ofe_3{
+    grid-area: OF3;
+}
+.marcas{
+    grid-area: MC;
+    font-size:large;
+    text-align: center;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+.m1{
+    grid-area: M1;
+}
+.m2{
+    grid-area: M2;
+}
+.m3{
+    grid-area: M3;
+}
+.m4{
+    grid-area: M4;
+}
+.m5{
+    grid-area: M5;
+}
+.m6{
+    grid-area: M6;
+}
+.footer{
+    grid-area: F;
+}
